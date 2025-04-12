@@ -1,0 +1,142 @@
+body {
+  font-family: "Noto Sans", sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  color: #343a40;
+}
+
+.btn-primary {
+  background-color: #0d6efd;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: #0257d5;
+}
+
+.navbar {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+.brand-card {
+  transition: transform 0.3s ease;
+}
+.brand-card .card {
+  border: none;
+  border-radius: 10px;
+}
+.brand-card .card .card-img-top {
+  height: 150px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.brand-card .card .card-title {
+  font-weight: bold;
+  color: #000;
+}
+.brand-card:hover {
+  transform: scale(1.03);
+}
+
+footer {
+  background-color: #111;
+  color: white;
+  font-size: 0.9rem;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .card-title {
+    font-size: 1.1rem;
+  }
+}
+.brand-card {
+  transition: transform 0.3s ease;
+}
+.brand-card .card {
+  border: none;
+  border-radius: 10px;
+}
+.brand-card .card .card-img-top {
+  height: 150px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.brand-card .card .card-title {
+  font-weight: bold;
+  color: #000;
+}
+.brand-card:hover {
+  transform: scale(1.03);
+}
+
+.brand-logo {
+  max-height: 140px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.brand-card {
+  transition: transform 0.3s ease;
+}
+.brand-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+.brand-card p {
+  font-size: 0.95rem;
+}
+
+.btn-primary {
+  background-color: #0d6efd;
+  color: white;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+.btn-primary:hover {
+  background-color: #0257d5;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transform: scale(1.03);
+}
+
+.bg-soft {
+  background-color: #fdfdfb;
+}
+
+.car-card {
+  transition: transform 0.3s ease;
+}
+.car-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+.car-card .card-img-top {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 200px;
+}
+.car-card ul {
+  font-size: 0.95rem;
+  margin-top: 10px;
+}
+

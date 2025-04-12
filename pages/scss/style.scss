@@ -1,0 +1,161 @@
+
+// VARIABLES
+
+
+$primary-color: #0d6efd;         // Azul principal
+$secondary-color: #343a40;       // Gris oscuro para títulos
+$background-color: #f8f9fa;      // Fondo claro
+$text-color: #212529;            // Texto general
+$dark-color: #111;               // Fondo oscuro
+$font-main: 'Noto Sans', sans-serif;
+
+
+// ESTILOS GENERALES
+
+
+body {
+  font-family: $font-main;
+  background-color: $background-color;
+  color: $text-color;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  color: $secondary-color;
+}
+
+
+// BOTONES
+
+
+.btn-primary {
+  background-color: $primary-color;
+  border: none;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}
+
+
+// NAVBAR
+
+
+.navbar {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+// TARJETAS GENERALES
+
+
+.card {
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+  }
+}
+
+
+// TARJETAS DE MARCAS (Catálogo)
+
+
+.brand-card {
+  transition: transform 0.3s ease;
+
+  .card {
+    border: none;
+    border-radius: 10px;
+
+    .card-img-top {
+      height: 150px;
+      object-fit: contain;
+    }
+
+    .card-title {
+      font-weight: bold;
+      color: #000;
+    }
+  }
+
+  &:hover {
+    transform: scale(1.03);
+  }
+}
+
+
+// FOOTER
+
+
+footer {
+  background-color: $dark-color;
+  color: white;
+  font-size: 0.9rem;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+
+// MEDIA QUERIES
+
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+}
+
+
+// IMPORTS
+
+
+@import 'brands';
+
+.btn-primary {
+    background-color: $primary-color;
+    color: white;
+    font-weight: bold;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+  
+    &:hover {
+      background-color: darken($primary-color, 10%);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      transform: scale(1.03);
+    }
+  }
+  
+  // Fondo cálido y amigable
+.bg-soft {
+  background-color: #fdfdfb; // un beige/gris claro suave
+}
+
+// Estilo para cards de autos
+.car-card {
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+
+  .card-img-top {
+    object-fit: cover;
+    height: 200px;
+  }
+
+  ul {
+    font-size: 0.95rem;
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,18 @@
+# Ignorar archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Ignorar carpetas que no se deben subir
+node_modules/
+dist/
+sass-cache/
+.cache/
+.vscode/
+.idea/
+
+# Archivos temporales
+*.log
+*.tmp
+
+# Mapas de SASS 
+*.css.map

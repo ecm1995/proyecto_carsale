@@ -1,0 +1,36 @@
+.brand-card {
+  transition: transform 0.3s ease;
+}
+.brand-card .card {
+  border: none;
+  border-radius: 10px;
+}
+.brand-card .card .card-img-top {
+  height: 150px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.brand-card .card .card-title {
+  font-weight: bold;
+  color: #000;
+}
+.brand-card:hover {
+  transform: scale(1.03);
+}
+
+.brand-logo {
+  max-height: 140px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.brand-card {
+  transition: transform 0.3s ease;
+}
+.brand-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+.brand-card p {
+  font-size: 0.95rem;
+}/*# sourceMappingURL=brands.css.map */
