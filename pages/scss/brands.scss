@@ -1,0 +1,42 @@
+.brand-card {
+  transition: transform 0.3s ease;
+
+  .card {
+    border: none;
+    border-radius: 10px;
+
+    .card-img-top {
+      height: 150px;
+      object-fit: contain;
+    }
+
+    .card-title {
+      font-weight: bold;
+      color: #000;
+    }
+  }
+
+  &:hover {
+    transform: scale(1.03);
+  }
+}
+
+// Tamaño uniforme para logos de marca
+.brand-logo {
+  max-height: 140px;
+  object-fit: contain;
+}
+
+// Espaciado y presentación de tarjetas
+.brand-card {
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+}
